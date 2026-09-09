@@ -1,0 +1,48 @@
+print("==============================") print(" CHINESE ZODIAC") print("==============================")
+
+years = int(input("Enter your birth year: "))
+
+if years <= 0: print("Please enter a valid year.") else: zodiac = years % 12
+
+if zodiac == 0:
+    sign = "Monkey"
+    trait = "clever and curious"
+elif zodiac == 1:
+    sign = "Rooster"
+    trait = "confident and hardworking"
+elif zodiac == 2:
+    sign = "Dog"
+    trait = "loyal and honest"
+elif zodiac == 3:
+    sign = "Pig"
+    trait = "kind and generous"
+elif zodiac == 4:
+    sign = "Rat"
+    trait = "clever and resourceful"
+elif zodiac == 5:
+    sign = "Ox"
+    trait = "strong and dependable"
+elif zodiac == 6:
+    sign = "Tiger"
+    trait = "brave and confident"
+elif zodiac == 7:
+    sign = "Rabbit"
+    trait = "gentle and thoughtful"
+elif zodiac == 8:
+    sign = "Dragon"
+    trait = "ambitious and energetic"
+elif zodiac == 9:
+    sign = "Snake"
+    trait = "wise and calm"
+elif zodiac == 10:
+    sign = "Horse"
+    trait = "energetic and independent"
+elif zodiac == 11:
+    sign = "Goat"
+    trait = "creative and kind"
+
+print("------------------------------")
+print("Birth Year:", years)
+print("Zodiac Sign:", sign)
+print("Traits:", trait)
+print("------------------------------")
